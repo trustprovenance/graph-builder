@@ -1,0 +1,27 @@
+{
+  "name": "@trustprovenance/graph-builder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "n3": "^1.17.4",
+    "typescript": "^5.5.4"
+  },
+  "devDependencies": {
+    "husky": "^9.1.3",
+    "lint-staged": "^15.2.7"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,json,css,scss,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  }
+}
